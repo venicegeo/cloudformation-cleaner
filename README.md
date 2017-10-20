@@ -25,6 +25,8 @@ and a script to be run on the instance upon completion of a task.
 In order for the Lambda function to execute, you need to create your stack with the following items:
 * An SNS topic *my-topic*
 * Subscription for Lambda to *my-topic*
+* After the stack is created, you need to manually add the Lambda trigger from your SNS topic (Still looking
+at how to automate)
 
 #### Download and run completion script
 
