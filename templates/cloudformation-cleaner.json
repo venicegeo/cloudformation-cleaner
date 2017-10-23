@@ -153,7 +153,8 @@
                                         "sns:Unsubscribe",
                                         "logs:CreateLogGroup",
                                         "logs:CreateLogStream",
-                                        "logs:PutLogEvents"
+                                        "logs:PutLogEvents",
+                                        "lambda:RemovePermission"
                                     ],
                                     "Effect": "Allow",
                                     "Resource": "*"

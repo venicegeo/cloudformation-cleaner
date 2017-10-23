@@ -88,7 +88,7 @@ def gen_lambda_function():
       Tags = gen_tags("CloudFormation-Cleaner")
   )
   return function
-  
+
 def gen_iam_role():
   LambdaExecutionRole = Role(
       "LambdaExecutionRole",
@@ -115,7 +115,8 @@ def gen_iam_role():
                     "sns:Unsubscribe",
                     "logs:CreateLogGroup",
                     "logs:CreateLogStream",
-                    "logs:PutLogEvents"
+                    "logs:PutLogEvents",
+                    "lambda:RemovePermission"
                   ],
                   "Resource": "*",
                   "Effect": "Allow"
