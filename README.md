@@ -26,7 +26,7 @@ In order for the Lambda function to execute, you need to create your stack with 
 
 * An SNS topic *my-topic*
 * Subscription for Lambda to *my-topic*
-* Permissions for the SNS topic to invoke the Lambda function (Note that this is a ~Lambda~ permission, not an IAM.)
+* Permissions for the SNS topic to invoke the Lambda function (Note that this is a __Lambda__ permission, not an IAM.)
 * OPTIONAL: Email subscription to the SNS topic to be notified upon completion.
 
 
